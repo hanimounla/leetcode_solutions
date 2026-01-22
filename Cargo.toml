@@ -1,0 +1,10 @@
+[package]
+name = "leetcode_solutions"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "leetcode_solutions"
+path = "main.rs"

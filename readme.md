@@ -5,6 +5,13 @@ Profile: https://leetcode.com/u/hanimounla/
 
 
 # Solutions Outputs (Release)
+3. Length of longest substring
+```
+Running length of longest substring...
+3
+Elapsed: 29.083µs
+```
+
 5. Longest Palindrome
 ```
 Running longest palindrom...

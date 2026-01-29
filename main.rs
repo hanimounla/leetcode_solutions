@@ -2,11 +2,21 @@ pub mod solutions;
 use std::time::Instant;
 
 use crate::solutions::{
-    MinWindowSubstring::MinWindowSubstring, longest_palindrome::longest_palindrome,
+    MinWindowSubstring::MinWindowSubstring,
+    length_of_longest_substring::length_of_longest_substring,
+    longest_palindrome::longest_palindrome,
     longest_palindrome_optimized::longest_palindrome_optimized, zigzag_conversion::convert,
 };
 
 pub fn main() {
+    //3. length of longest substring
+    let test_case3 = "abcabcbb".to_string();
+    println!("Running length of longest substring...");
+    let start = Instant::now();
+    let result3 = length_of_longest_substring(test_case3);
+    let duration = start.elapsed();
+    println!("{}", result3);
+    println!("Elapsed: {:?}", duration);
     // 5.
     // longest palindrom
     let test_case5 = "mwwfjysbkebpdjyabcfkgprtxpwvhglddhmvaprcvrnuxifcrjpdgnktvmggmguiiquibmtviwjsqwtchkqgxqwljouunurcdtoeygdqmijdympcamawnlzsxucbpqtuwkjfqnzvvvigifyvymfhtppqamlgjozvebygkxawcbwtouaankxsjrteeijpuzbsfsjwxejtfrancoekxgfyangvzjkdskhssdjvkvdskjtiybqgsmpxmghvvicmjxqtxdowkjhmlnfcpbtwvtmjhnzntxyfxyinmqzivxkwigkondghzmbioelmepgfttczskvqfejfiibxjcuyevvpawybcvvxtxycrfbcnpvkzryrqujqaqhoagdmofgdcbhvlwgwmsmhomknbanvntspvvhvccedzzngdywuccxrnzbtchisdwsrfdqpcwknwqvalczznilujdrlevncdsyuhnpmheukottewtkuzhookcsvctsqwwdvfjxifpfsqxpmpwospndozcdbfhselfdltmpujlnhfzjcgnbgprvopxklmlgrlbldzpnkhvhkybpgtzipzotrgzkdrqntnuaqyaplcybqyvidwcfcuxinchretgvfaepmgilbrtxgqoddzyjmmupkjqcypdpfhpkhitfegickfszermqhkwmffdizeoprmnlzbjcwfnqyvmhtdekmfhqwaftlyydirjnojbrieutjhymfpflsfemkqsoewbojwluqdckmzixwxufrdpqnwvwpbavosnvjqxqbosctttxvsbmqpnolfmapywtpfaotzmyjwnd".to_string();

@@ -2,7 +2,7 @@ pub mod solutions;
 use std::time::Instant;
 
 use crate::solutions::{
-    longest_palindrome::longest_palindrome,
+    MinWindowSubstring::MinWindowSubstring, longest_palindrome::longest_palindrome,
     longest_palindrome_optimized::longest_palindrome_optimized, zigzag_conversion::convert,
 };
 
@@ -31,6 +31,17 @@ pub fn main() {
     println!("Running Zigzag conversion...");
     let start = Instant::now();
     let result6 = convert(test_case6, 4);
+    let duration = start.elapsed();
+    println!("{}", result6);
+    println!("Elapsed: {:?}", duration);
+
+    // Extra solutions
+
+    // MinWindowSubstring
+    let test_list = vec!["ahffaksfajeeubsne", "jefaa"];
+    println!("Running MinWindowSubstring...");
+    let start = Instant::now();
+    let result6 = MinWindowSubstring(test_list);
     let duration = start.elapsed();
     println!("{}", result6);
     println!("Elapsed: {:?}", duration);

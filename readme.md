@@ -31,3 +31,9 @@ Elapsed: 3.541µs
 ```
 
 
+7. String to Integer
+```
+Running String to Integrer...
+2147483647
+Elapsed: 8.333µs
+```

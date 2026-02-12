@@ -31,7 +31,7 @@ Elapsed: 3.541µs
 ```
 
 
-7. String to Integer
+8. String to Integer (Atoi)
 ```
 Running String to Integrer...
 2147483647

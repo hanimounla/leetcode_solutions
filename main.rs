@@ -18,8 +18,7 @@ pub fn main() {
     let duration = start.elapsed();
     println!("{}", result3);
     println!("Elapsed: {:?}", duration);
-    // 5.
-    // longest palindrom
+    // 5. longest palindrom
     let test_case5 = "mwwfjysbkebpdjyabcfkgprtxpwvhglddhmvaprcvrnuxifcrjpdgnktvmggmguiiquibmtviwjsqwtchkqgxqwljouunurcdtoeygdqmijdympcamawnlzsxucbpqtuwkjfqnzvvvigifyvymfhtppqamlgjozvebygkxawcbwtouaankxsjrteeijpuzbsfsjwxejtfrancoekxgfyangvzjkdskhssdjvkvdskjtiybqgsmpxmghvvicmjxqtxdowkjhmlnfcpbtwvtmjhnzntxyfxyinmqzivxkwigkondghzmbioelmepgfttczskvqfejfiibxjcuyevvpawybcvvxtxycrfbcnpvkzryrqujqaqhoagdmofgdcbhvlwgwmsmhomknbanvntspvvhvccedzzngdywuccxrnzbtchisdwsrfdqpcwknwqvalczznilujdrlevncdsyuhnpmheukottewtkuzhookcsvctsqwwdvfjxifpfsqxpmpwospndozcdbfhselfdltmpujlnhfzjcgnbgprvopxklmlgrlbldzpnkhvhkybpgtzipzotrgzkdrqntnuaqyaplcybqyvidwcfcuxinchretgvfaepmgilbrtxgqoddzyjmmupkjqcypdpfhpkhitfegickfszermqhkwmffdizeoprmnlzbjcwfnqyvmhtdekmfhqwaftlyydirjnojbrieutjhymfpflsfemkqsoewbojwluqdckmzixwxufrdpqnwvwpbavosnvjqxqbosctttxvsbmqpnolfmapywtpfaotzmyjwnd".to_string();
     println!("Running longest palindrom...");
     let start = Instant::now();
@@ -36,8 +35,7 @@ pub fn main() {
     println!("{}", result5);
     println!("Elapsed: {:?}", duration);
 
-    // 6.
-    // Zigzag conversion
+    // 6. Zigzag conversion
     let test_case6 = "PAYPALISHIRING".to_string();
     println!("Running Zigzag conversion...");
     let start = Instant::now();
@@ -46,7 +44,7 @@ pub fn main() {
     println!("{}", result6);
     println!("Elapsed: {:?}", duration);
 
-    // 7. String to Integrer
+    // 8. String to Integer (atoi)
     let test_case7 = "1234567890123456789012345678901234567890".to_string();
     println!("Running String to Integrer...");
     let start = Instant::now();

@@ -4,4 +4,3 @@ pub mod longest_palindrome;
 pub mod longest_palindrome_optimized;
 pub mod string_to_integer;
 pub mod zigzag_conversion;
-pub mod string_to_integer;

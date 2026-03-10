@@ -5,8 +5,8 @@ use crate::solutions::{
     MinWindowSubstring::MinWindowSubstring,
     length_of_longest_substring::length_of_longest_substring,
     longest_palindrome::longest_palindrome,
-    longest_palindrome_optimized::longest_palindrome_optimized, string_to_integer::my_atoi,
-    zigzag_conversion::convert,
+    longest_palindrome_optimized::longest_palindrome_optimized, zigzag_conversion::convert,
+    string_to_integer::my_atoi
 };
 
 pub fn main() {
@@ -44,13 +44,15 @@ pub fn main() {
     println!("{}", result6);
     println!("Elapsed: {:?}", duration);
 
-    // 8. String to Integer (atoi)
-    let test_case7 = "1234567890123456789012345678901234567890".to_string();
-    println!("Running String to Integrer...");
+
+    // 8.
+    // String to integer
+    let test_case8 = "words and 987".to_string();
+    println!("Running string to integer...");
     let start = Instant::now();
-    let result7 = my_atoi(test_case7);
+    let result8 = my_atoi(test_case8);
     let duration = start.elapsed();
-    println!("{}", result7);
+    println!("{}", result8);
     println!("Elapsed: {:?}", duration);
 
     // Extra solutions

@@ -31,9 +31,11 @@ Elapsed: 3.541µs
 ```
 
 
-8. String to Integer (Atoi)
+8. String to integer
 ```
-Running String to Integrer...
-2147483647
-Elapsed: 8.333µs
+Running string to integer...
+0
+Elapsed: 5.9µs
 ```
+
+

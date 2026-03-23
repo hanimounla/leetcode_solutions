@@ -6,13 +6,14 @@ use crate::solutions::{
     length_of_longest_substring::length_of_longest_substring,
     longest_palindrome::longest_palindrome,
     longest_palindrome_optimized::longest_palindrome_optimized, zigzag_conversion::convert,
-    string_to_integer::my_atoi
+    string_to_integer::my_atoi,
+    palindrom_number::is_palindrome
 };
 
 pub fn main() {
     //3. length of longest substring
     let test_case3 = "abcabcbb".to_string();
-    println!("Running length of longest substring...");
+    println!("3. length of longest substring...");
     let start = Instant::now();
     let result3 = length_of_longest_substring(test_case3);
     let duration = start.elapsed();
@@ -20,7 +21,7 @@ pub fn main() {
     println!("Elapsed: {:?}", duration);
     // 5. longest palindrom
     let test_case5 = "mwwfjysbkebpdjyabcfkgprtxpwvhglddhmvaprcvrnuxifcrjpdgnktvmggmguiiquibmtviwjsqwtchkqgxqwljouunurcdtoeygdqmijdympcamawnlzsxucbpqtuwkjfqnzvvvigifyvymfhtppqamlgjozvebygkxawcbwtouaankxsjrteeijpuzbsfsjwxejtfrancoekxgfyangvzjkdskhssdjvkvdskjtiybqgsmpxmghvvicmjxqtxdowkjhmlnfcpbtwvtmjhnzntxyfxyinmqzivxkwigkondghzmbioelmepgfttczskvqfejfiibxjcuyevvpawybcvvxtxycrfbcnpvkzryrqujqaqhoagdmofgdcbhvlwgwmsmhomknbanvntspvvhvccedzzngdywuccxrnzbtchisdwsrfdqpcwknwqvalczznilujdrlevncdsyuhnpmheukottewtkuzhookcsvctsqwwdvfjxifpfsqxpmpwospndozcdbfhselfdltmpujlnhfzjcgnbgprvopxklmlgrlbldzpnkhvhkybpgtzipzotrgzkdrqntnuaqyaplcybqyvidwcfcuxinchretgvfaepmgilbrtxgqoddzyjmmupkjqcypdpfhpkhitfegickfszermqhkwmffdizeoprmnlzbjcwfnqyvmhtdekmfhqwaftlyydirjnojbrieutjhymfpflsfemkqsoewbojwluqdckmzixwxufrdpqnwvwpbavosnvjqxqbosctttxvsbmqpnolfmapywtpfaotzmyjwnd".to_string();
-    println!("Running longest palindrom...");
+    println!("5. Longest palindrom...");
     let start = Instant::now();
     let result5 = longest_palindrome(test_case5.clone());
     let duration = start.elapsed();
@@ -28,7 +29,7 @@ pub fn main() {
     println!("Elapsed: {:?}", duration);
 
     // longest palindrom optimized
-    println!("Running longest palindrom optimized...");
+    println!("5. Longest palindrom optimized...");
     let start = Instant::now();
     let result5 = longest_palindrome_optimized(test_case5);
     let duration = start.elapsed();
@@ -37,7 +38,7 @@ pub fn main() {
 
     // 6. Zigzag conversion
     let test_case6 = "PAYPALISHIRING".to_string();
-    println!("Running Zigzag conversion...");
+    println!("6. Zigzag conversion...");
     let start = Instant::now();
     let result6 = convert(test_case6, 4);
     let duration = start.elapsed();
@@ -48,12 +49,23 @@ pub fn main() {
     // 8.
     // String to integer
     let test_case8 = "words and 987".to_string();
-    println!("Running string to integer...");
+    println!("8. String to integer...");
     let start = Instant::now();
     let result8 = my_atoi(test_case8);
     let duration = start.elapsed();
     println!("{}", result8);
     println!("Elapsed: {:?}", duration);
+
+
+    // 9. Palindrome number
+    let test_case9 = -121;
+    println!("9. Palindrome number...");
+    let start = Instant::now();
+    let result9 = is_palindrome(test_case9);
+    let duration = start.elapsed();
+    println!("{}", result9);
+    println!("Elapsed: {:?}", duration);
+
 
     // Extra solutions
 

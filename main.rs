@@ -5,9 +5,8 @@ use crate::solutions::{
     MinWindowSubstring::MinWindowSubstring,
     length_of_longest_substring::length_of_longest_substring,
     longest_palindrome::longest_palindrome,
-    longest_palindrome_optimized::longest_palindrome_optimized, zigzag_conversion::convert,
-    string_to_integer::my_atoi,
-    palindrom_number::is_palindrome
+    longest_palindrome_optimized::longest_palindrome_optimized, palindrom_number::is_palindrome,
+    regular_expresssion_matching::is_match, string_to_integer::my_atoi, zigzag_conversion::convert,
 };
 
 pub fn main() {
@@ -45,7 +44,6 @@ pub fn main() {
     println!("{}", result6);
     println!("Elapsed: {:?}", duration);
 
-
     // 8.
     // String to integer
     let test_case8 = "words and 987".to_string();
@@ -56,7 +54,6 @@ pub fn main() {
     println!("{}", result8);
     println!("Elapsed: {:?}", duration);
 
-
     // 9. Palindrome number
     let test_case9 = -121;
     println!("9. Palindrome number...");
@@ -66,6 +63,13 @@ pub fn main() {
     println!("{}", result9);
     println!("Elapsed: {:?}", duration);
 
+    // 10. Regular expression matching
+    println!("10. Regular expression matching...");
+    let start = Instant::now();
+    let result10 = is_match("mississippi".to_string(), "mis*is*ip*.".to_string());
+    let duration = start.elapsed();
+    println!("{}", result10);
+    println!("Elapsed: {:?}", duration);
 
     // Extra solutions
 

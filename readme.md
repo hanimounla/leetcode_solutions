@@ -1,10 +1,11 @@
 # About
+
 Some of my leetcode solutions written in Rust programming lanuguage, each one will have my orignial code and AI optimized one
 
 Profile: https://leetcode.com/u/hanimounla/
 
-
 # Solutions Outputs (Release)
+
 ```
 3. length of longest substring...
 3
@@ -24,6 +25,10 @@ Elapsed: 400ns
 9. Palindrome number...
 false
 Elapsed: 100ns
+10. Regular expression matching...
+true
+Elapsed: 49µs
 Running MinWindowSubstring...
 ["ahffaksfajeeubsne", "jefaa"]
 
+```

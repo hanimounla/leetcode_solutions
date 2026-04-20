@@ -28,6 +28,9 @@ Elapsed: 100ns
 10. Regular expression matching...
 true
 Elapsed: 49µs
+11. Container with most water...
+49
+Elapsed: 1.1µs
 Running MinWindowSubstring...
 ["ahffaksfajeeubsne", "jefaa"]
 

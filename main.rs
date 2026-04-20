@@ -2,7 +2,7 @@ pub mod solutions;
 use std::time::Instant;
 
 use crate::solutions::{
-    MinWindowSubstring::MinWindowSubstring,
+    MinWindowSubstring::MinWindowSubstring, container_with_most_water::max_area,
     length_of_longest_substring::length_of_longest_substring,
     longest_palindrome::longest_palindrome,
     longest_palindrome_optimized::longest_palindrome_optimized, palindrom_number::is_palindrome,
@@ -69,6 +69,15 @@ pub fn main() {
     let result10 = is_match("mississippi".to_string(), "mis*is*ip*.".to_string());
     let duration = start.elapsed();
     println!("{}", result10);
+    println!("Elapsed: {:?}", duration);
+
+    // 11. Container with most water
+    let test_case11 = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
+    println!("11. Container with most water...");
+    let start = Instant::now();
+    let result11 = max_area(test_case11);
+    let duration = start.elapsed();
+    println!("{}", result11);
     println!("Elapsed: {:?}", duration);
 
     // Extra solutions
